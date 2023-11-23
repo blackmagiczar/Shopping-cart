@@ -24,7 +24,6 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid blue;
 }
 .cart{
     background-color: whitesmoke;
