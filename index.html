@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="cart.js"></script>
+</head>
+<body>
+
+    <div class="cartContainer" id="cartContainer">
+        <div class = "cart" id="cartAnim">
+            <div class="close">
+                <p class="yourCart">Your shopping cart</p>
+                <button type="button" id="close" onclick="CloseWindow()">x</button>
+            </div>
+            
+            <p class="itemID">ID: 25784</p>
+
+            <div class = "itemContainer">
+                <img src="/stove.jpg" alt="">
+                <div class="itemDescription">
+                    <p id="itemTitle">Evaacs Deebot OZMO N8 + robot vacuum cleaner W12578513</p>
+                    <p id="stockStatus">In Stock</p>
+                </div>
+            </div>
+            
+            <div class="quantityContainer">
+                <button type="button" onclick="Decrement()">-</button>
+                <label for="quantityInput">
+                    <input type="number" name="quantity" id="quantityInput" value="1">
+                </label>
+
+                <button type="button" onclick="Increment()">+</button>
+                
+            </div>
+            
+            <hr>
+
+            <div class="summary">
+                <div class="package">
+                    <p>Standard Package</p>
+                    <p>FREE</p>
+                </div>
+                <div class="vat">
+                    <p>Total VAT</p>
+                    <p id = "totalVat">R60</p>
+                </div>
+                <div class="total">
+                    <p>Total</p>
+                    <p id = "total">R400</p>
+                </div>
+
+                <button class="gift">Got a gift card or promotional code?</button>
+            </div>
+
+            <button type="button" class="checkout" onclick="Checkout()">Checkout</button>
+
+        </div>
+    </div>
+</body>
+</html>
